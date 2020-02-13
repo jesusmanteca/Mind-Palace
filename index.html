@@ -10,23 +10,36 @@
 
     <script type="text/javascript">
 
-    var c = confirm("Do you want to exit?");
+    // var c = confirm("Do you want to exit?");
 
-    alert("IT IS " + c + " THAT YOU WOULD LIKE TO EXIT.")
+    // alert("IT IS " + c + " THAT YOU WOULD LIKE TO EXIT.")
 
-    var p = prompt("Where are you going next?");
+    // var p = prompt("Where are you going next?");
 
-    document.write(p + " we go, Captain.");
+    // document.write(p + " we go, Captain.");
 
-    var i = confirm("are you ready for this?")
-    var e = confirm("you sure?")
-    var question = prompt("What is coming next?")
+    var readyconfirm = confirm("Are you ready to go?")
+    var sureconfirm = confirm("Do you know where we're going? ")
+    var extraconfirm = confirm("Did you book a hotel? ")
+    // var question = prompt("What is coming next?")
 
-    if(i == false){
-        document.write(" Wrong answer, Captain.")
-    }else{
-        document.write(" Great answer, Captain.")
+    if(readyconfirm){
+        document.write(" Let's go");
     }
+    
+    else if (sureconfirm) {
+        document.write(" Take me away");
+    }
+    else if (extraconfirm) {
+        document.write(" last call");
+    }
+    else {
+        document.write(" Great answer, Captain, this is else");
+    }
+
+    console.log("ready confirm= " + readyconfirm);
+    console.log("sure confiurm= " + sureconfirm);
+    console.log("sure confiurm= " + extraconfirm);
 
     </script>
 
