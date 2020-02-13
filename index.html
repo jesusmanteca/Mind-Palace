@@ -18,28 +18,30 @@
 
     // document.write(p + " we go, Captain.");
 
-    var readyconfirm = confirm("Are you ready to go?")
-    var sureconfirm = confirm("Do you know where we're going? ")
-    var extraconfirm = confirm("Did you book a hotel? ")
-    // var question = prompt("What is coming next?")
+    var readyconfirm = confirm("Are you over 65? ")
+    var sureconfirm = confirm("Are you over 21? ")
+    var extraconfirm = confirm("Are you over 18? ")
+    var question = prompt("What is coming next?")
 
     if(readyconfirm){
-        document.write(" Let's go");
+        document.write(" Welcome to senior citizen land!");
     }
     
     else if (sureconfirm) {
-        document.write(" Take me away");
+        document.write(" Here's a beer!");
     }
     else if (extraconfirm) {
-        document.write(" last call");
+        document.write(" at least you can vote");
     }
     else {
-        document.write(" Great answer, Captain, this is else");
+        document.write(" nice try, come back later");
     }
+    document.write (" " + question + " is what's coming next!")
 
     console.log("ready confirm= " + readyconfirm);
     console.log("sure confiurm= " + sureconfirm);
     console.log("sure confiurm= " + extraconfirm);
+    console.log(question)
 
     </script>
 
