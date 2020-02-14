@@ -7,7 +7,7 @@
     <title>Mind Palace</title>
 </head>
 <body>
-
+<h2>You just typed <span id="user-text"><strong>...Nothing</strong></span></h2>
     <script type="text/javascript">
 
     // var c = confirm("Do you want to exit?");
@@ -75,26 +75,86 @@
 
 // document.write(coolPeople[0]);
 
+//     var coolPeople = ["Bruce Lee", "Arnold Schwarzenegger", "Will Smith", "Esther", "Marie Curie", "Joan of Arc"];
+
+// for (i = 0; i < coolPeople.length; i++) {
+//     coolPeople[i]=coolPeople[i].toLowerCase();
+//     console.log(coolPeople[i])
+// }
+
 // Use .toLowerCase() to make the values within the array lowercase
 
-var drinks = ["Coke", "PEPSI", "WATER", "ORANGE JUICE"];
+// var drinks = ["Coke", "PEPSI", "WATER", "ORANGE JUICE"];
 
-console.log("First Statment")
-console.log(drinks[0]);
-console.log(drinks[1]);
-console.log(drinks[2]);
-console.log(drinks[3]);
+// console.log("First Statment")
+// console.log(drinks[0]);
+// console.log(drinks[1]);
+// console.log(drinks[2]);
+// console.log(drinks[3]);
 
-drinks[0] = drinks[0].toUpperCase();
-drinks[1] = drinks[1].toLowerCase();
-drinks[2] = drinks[2].toLowerCase();
-drinks[3] = drinks[3].toLowerCase();
+// drinks[0] = drinks[0].toUpperCase();
+// drinks[1] = drinks[1].toLowerCase();
+// drinks[2] = drinks[2].toLowerCase();
+// drinks[3] = drinks[3].toLowerCase();
 
-console.log("Second Statment")
-console.log(drinks[0]);
-console.log(drinks[1]);
-console.log(drinks[2]);
-console.log(drinks[3]);
+// console.log("Second Statment")
+// console.log(drinks[0]);
+// console.log(drinks[1]);
+// console.log(drinks[2]);
+// console.log(drinks[3]);
+
+// *I'm trying here to understand for-loops
+
+
+
+// for (var i = 0; i < 100; i++) {
+//     console.log(i);
+// }
+
+// var vegetables = ["Carrots", "Peas", "Lettuce", "Tomatoes"]
+
+// // Instead of having to go through each one, we have a new key called for-Loop - introduce a variable index
+// // and set the beginning and end (the end can be the length of the array, otherwise .length,)
+
+// for (var i = 0; i < vegetables.length; i++) {
+//     vegetables[i] = vegetables[i].toUpperCase();
+//     console.log("I love " + vegetables[i].to)
+// }
+
+// var zooAnimals = ["Zebra", "Rhino", "Giraffe", "Owl"];
+
+// for (var i = zooAnimals.length - 1; i >= 0; i--) {
+//     console.log(zooAnimals[i])
+// }
+
+// var myFarm = ["chickens", "pigs", "cows", "horses", "ostriches"];
+// var arrayLength = myFarm.length;
+
+// for (var i = 0; i < arrayLength; i++) {
+//     console.log(myFarm[i])
+
+
+// // if (myFarm[i].charAt(0) === "c" || myFarm[i].charAt(0) === "o") {
+// //     myFarm[i] = myFarm[i].toUpperCase();
+// //     console.log(myFarm[i] + " - Starts with a c or an o!");
+// // }
+
+// if (myFarm[i].charAt(0) === "c" && myFarm[i].charAt(1) === "o" || myFarm[i].charAt(1) === "s") {
+//     myFarm[i] = myFarm[i].toUpperCase();
+//     console.log(myFarm[i] + " - Starts with a c and o or has an s in the second character!");
+// }
+
+// }
+
+ var userText = document.getElementById("user-text");
+
+console.log(userText.textContent);
+
+ document.onkeyup = function(event) {
+     userText.textContent = event.key;
+     console.log(userText.textContent);
+ };
+ 
     </script>
 
   </body>
